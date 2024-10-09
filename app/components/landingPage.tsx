@@ -424,7 +424,7 @@ export default function LandingPage() {
                   important metric of all — AFK.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Presented at: Next.js Conf 2023
+                  Presented at: Next.js Conf
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
                   Date: October 27, 2023
