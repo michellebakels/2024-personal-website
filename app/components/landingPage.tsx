@@ -452,7 +452,7 @@ export default function LandingPage() {
                   target="_blank"
                 >
                   <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                    LinkedIn: linkedin.com/in/michellebakels
+                    LinkedIn: linkedin.com/in/michelle-bakels-2052687a
                   </p>
                 </a>
                 <a href="mailto:michelle.bakels@gmail.com" target="_blank">
