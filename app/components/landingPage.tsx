@@ -142,41 +142,37 @@ export default function LandingPage() {
         <div className="hidden md:block md:w-1/3">
           <div className="sticky top-24 space-y-6">
             <h2
-              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 ${
-                activeSection === "events" ? "text-stone-800" : "text-stone-400"
-              } ${stickyTitles.events ? "opacity-100" : "opacity-0"}`}
+              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 text-stone-800 ${
+                stickyTitles.events ? "opacity-100" : "opacity-0"
+              }`}
             >
               Events
             </h2>
             <h2
-              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 ${
-                activeSection === "community"
-                  ? "text-stone-800"
-                  : "text-stone-400"
-              } ${stickyTitles.community ? "opacity-100" : "opacity-0"}`}
+              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 text-stone-800 ${
+                stickyTitles.community ? "opacity-100" : "opacity-0"
+              }`}
             >
               Community
             </h2>
             <h2
-              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 ${
-                activeSection === "work" ? "text-stone-800" : "text-stone-400"
-              } ${stickyTitles.work ? "opacity-100" : "opacity-0"}`}
+              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 text-stone-800 ${
+                stickyTitles.work ? "opacity-100" : "opacity-0"
+              }`}
             >
               Work
             </h2>
             <h2
-              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 ${
-                activeSection === "talks" ? "text-stone-800" : "text-stone-400"
-              } ${stickyTitles.talks ? "opacity-100" : "opacity-0"}`}
+              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 text-stone-800 ${
+                stickyTitles.talks ? "opacity-100" : "opacity-0"
+              }`}
             >
               Talks
             </h2>
             <h2
-              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 ${
-                activeSection === "contact"
-                  ? "text-stone-800"
-                  : "text-stone-400"
-              } ${stickyTitles.contact ? "opacity-100" : "opacity-0"}`}
+              className={`text-3xl font-light tracking-wide uppercase transition-opacity duration-300 text-stone-800 ${
+                stickyTitles.contact ? "opacity-100" : "opacity-0"
+              }`}
             >
               Contact
             </h2>
@@ -253,39 +249,45 @@ export default function LandingPage() {
             <div className="space-y-12">
               <div>
                 <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  Women in Tech Mentorship Program
+                  1909 Board of Directors
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
-                  Michelle is actively involved in mentoring aspiring women
-                  developers through this program.
+                  1909 is a non-profit 501(c)3 organization dedicated to the
+                  holistic growth of entrepreneurs, small business owners,
+                  creative freelancers, and innovators.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Role: Lead Mentor
+                  Role: Vice Chair
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Duration: Ongoing
+                  Duration: 2022 - Present
                 </p>
-                <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                  Join the Program
-                </button>
+                <a href="https://www.weare1909.org/" target="_blank">
+                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                    Learn More
+                  </button>
+                </a>
               </div>
               <div>
                 <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  Open Source Contributions
+                  Tech Hub Foundation Board of Directors
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
-                  Check out Michelle's contributions to various open source
-                  projects and get involved.
+                  The Tech Hub Foundation is a 501(c)3 charitable organization
+                  committed to nurturing our tech community and promoting STEM
+                  education throughout South Florida.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Projects: React, Next.js, Tailwind CSS
+                  Role: Chair
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Contributions: 50+ pull requests
+                  Duration: 2018 - Present
                 </p>
-                <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                  View on GitHub
-                </button>
+                {/* <a href="https://techhubsouthflorida.org/" target="_blank">
+                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                    Learn More
+                  </button>
+                </a> */}
               </div>
             </div>
             <div className="border-t border-stone-200 mt-12" />
@@ -302,39 +304,63 @@ export default function LandingPage() {
             <div className="space-y-12">
               <div>
                 <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  DHOS
+                  Developer Health OS
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
-                  Michelle is actively involved in mentoring aspiring women
-                  developers through this program.
+                  The Developer Health OS is a guide to supporting health in
+                  tech and finding restful work through burnout recovery,
+                  burnout prevention, and optimium performance.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Role: Lead Mentor
+                  Role: Co-Author, Developer
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Duration: Ongoing
+                  Tools: Astro, Vercel
                 </p>
-                <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                  Join the Program
-                </button>
+                <a href="https://www.devhealthos.com/" target="_blank">
+                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                    Explore the OS
+                  </button>
+                </a>
               </div>
               <div>
                 <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  Blog/GitHub
+                  Blog
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
-                  Check out Michelle's contributions to various open source
-                  projects and get involved.
-                </p>
-                <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Projects: React, Next.js, Tailwind CSS
+                  A space to share long-form thoughts, ideas, experimentations,
+                  and explorations.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Contributions: 50+ pull requests
+                  Topics: Community, Software Development, Public Speaking
                 </p>
-                <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                  View on GitHub
-                </button>
+                {/* <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                  Contributions: 50+ pull requests
+                </p> */}
+                <a href="https://michellebakels.hashnode.dev/" target="_blank">
+                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                    Read on Hashnode
+                  </button>
+                </a>
+              </div>
+              <div>
+                <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
+                  GitHub
+                </h3>
+                <p className="mb-2 text-sm leading-relaxed">
+                  Check out the latest projects I've been working on.
+                </p>
+                <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                  Tools: React, Next.js, Tailwind CSS, Astro
+                </p>
+                {/* <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                  Contributions: 50+ pull requests
+                </p> */}
+                <a href="https://github.com/michellebakels" target="_blank">
+                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                    View on GitHub
+                  </button>
+                </a>
               </div>
             </div>
             <div className="border-t border-stone-200 mt-12" />
