@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react"
 
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  //   const [activeSection, setActiveSection] = useState("")
   const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({})
   const [stickyTitles, setStickyTitles] = useState({
     events: true,
@@ -15,21 +14,6 @@ export default function LandingPage() {
   })
 
   useEffect(() => {
-    /* const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id)
-          }
-        })
-      },
-      { threshold: 0.5 }
-    )
-
-    Object.values(sectionRefs.current).forEach((ref) => {
-      if (ref) observer.observe(ref)
-    }) */
-
     const handleScroll = () => {
       const communityTop =
         sectionRefs.current["community"]?.getBoundingClientRect().top
@@ -39,17 +23,16 @@ export default function LandingPage() {
         sectionRefs.current["contact"]?.getBoundingClientRect().top
 
       setStickyTitles({
-        events: (communityTop ?? 0) > 250,
-        community: (communityTop ?? 0) <= 250 && (workTop ?? 0) > 250,
-        work: (workTop ?? 0) <= 250 && (talksTop ?? 0) > 250,
-        talks: (talksTop ?? 0) <= 250 && (contactTop ?? 0) > 250,
-        contact: (contactTop ?? 0) <= 250,
+        events: (communityTop ?? 0) > 100,
+        community: (communityTop ?? 0) <= 100 && (workTop ?? 0) > 100,
+        work: (workTop ?? 0) <= 100 && (talksTop ?? 0) > 100,
+        talks: (talksTop ?? 0) <= 100 && (contactTop ?? 0) > 300,
+        contact: (contactTop ?? 0) <= 300,
       })
     }
 
     window.addEventListener("scroll", handleScroll)
     return () => {
-      //   observer.disconnect()
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
@@ -57,7 +40,7 @@ export default function LandingPage() {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId)
     if (section) {
-      const yOffset = -80 // Adjust this value to account for the fixed header
+      const yOffset = -80
       const y =
         section.getBoundingClientRect().top + window.pageYOffset + yOffset
       window.scrollTo({ top: y, behavior: "smooth" })
@@ -138,7 +121,7 @@ export default function LandingPage() {
           </p>
         </div>
       </section>
-      <main className="py-12 px-4 md:px-8 md:flex ">
+      <main className="py-12 px-4 md:px-8 md:flex">
         <div className="hidden md:block md:w-1/3">
           <div className="sticky top-24 space-y-6">
             <h2
