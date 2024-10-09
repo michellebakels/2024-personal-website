@@ -181,7 +181,9 @@ export default function LandingPage() {
         <div className="md:w-2/3 px-4">
           <section
             id="events"
-            ref={(el) => (sectionRefs.current["events"] = el)}
+            ref={(el) => {
+              if (el) sectionRefs.current["events"] = el
+            }}
             className="pb-12"
           >
             <h2 className="text-3xl font-light tracking-wide uppercase mb-6 md:hidden">
@@ -240,7 +242,9 @@ export default function LandingPage() {
 
           <section
             id="community"
-            ref={(el) => (sectionRefs.current["community"] = el)}
+            ref={(el) => {
+              if (el) sectionRefs.current["community"] = el
+            }}
             className="pb-12"
           >
             <h2 className="text-3xl font-light tracking-wide uppercase mb-6 md:hidden">
@@ -295,7 +299,9 @@ export default function LandingPage() {
 
           <section
             id="work"
-            ref={(el) => (sectionRefs.current["work"] = el)}
+            ref={(el) => {
+              if (el) sectionRefs.current["work"] = el
+            }}
             className="pb-12"
           >
             <h2 className="text-3xl font-light tracking-wide uppercase mb-6 md:hidden">
@@ -368,7 +374,9 @@ export default function LandingPage() {
 
           <section
             id="talks"
-            ref={(el) => (sectionRefs.current["talks"] = el)}
+            ref={(el) => {
+              if (el) sectionRefs.current["talks"] = el
+            }}
             className="pb-12"
           >
             <h2 className="text-3xl font-light tracking-wide uppercase mb-6 md:hidden">
@@ -436,7 +444,9 @@ export default function LandingPage() {
 
           <section
             id="contact"
-            ref={(el) => (sectionRefs.current["contact"] = el)}
+            ref={(el) => {
+              if (el) sectionRefs.current["contact"] = el
+            }}
             className="pb-12"
           >
             <h2 className="text-3xl font-light tracking-wide uppercase mb-6 md:hidden">
