@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react"
 
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("")
+  //   const [activeSection, setActiveSection] = useState("")
   const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({})
   const [stickyTitles, setStickyTitles] = useState({
     events: true,
@@ -15,7 +15,7 @@ export default function LandingPage() {
   })
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    /* const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -28,7 +28,7 @@ export default function LandingPage() {
 
     Object.values(sectionRefs.current).forEach((ref) => {
       if (ref) observer.observe(ref)
-    })
+    }) */
 
     const handleScroll = () => {
       const communityTop =
@@ -49,7 +49,7 @@ export default function LandingPage() {
 
     window.addEventListener("scroll", handleScroll)
     return () => {
-      observer.disconnect()
+      //   observer.disconnect()
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
@@ -348,7 +348,7 @@ export default function LandingPage() {
                   GitHub
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
-                  Check out the latest projects I've been working on.
+                  Check out the latest projects I&apos;ve been working on.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
                   Tools: React, Next.js, Tailwind CSS, Astro
@@ -383,7 +383,7 @@ export default function LandingPage() {
                   Drawing from my own experiences with stress and burnout in the
                   tech industry, I emphasize the importance of addressing health
                   issues among developers, advocating for rest, self-care, and
-                  effective time management, and introduced G2I's Developer
+                  effective time management, and introduced G2I&apos;s Developer
                   Health Program to raise awareness and provide resources for
                   preventing burnout.
                 </p>
@@ -448,8 +448,8 @@ export default function LandingPage() {
                   Get in Touch
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
-                  If you'd like to discuss a project, collaboration, or speaking
-                  opportunity, feel free to reach out.
+                  If you&apos;d like to discuss a project, collaboration, or
+                  speaking opportunity, feel free to reach out.
                 </p>
                 <a href="mailto:michelle.bakels@gmail.com">
                   <p className="text-xs text-stone-600 uppercase tracking-wide">
