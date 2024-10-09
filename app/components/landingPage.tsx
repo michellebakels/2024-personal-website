@@ -218,7 +218,7 @@ export default function LandingPage() {
                 </a>
               </div>
             </div>
-            <div className="border-t border-stone-200 mt-12" />
+            <div className="border-t border-stone-800 mt-12" />
           </section>
 
           <section
@@ -275,7 +275,7 @@ export default function LandingPage() {
                 </a> */}
               </div>
             </div>
-            <div className="border-t border-stone-200 mt-12" />
+            <div className="border-t border-stone-800 mt-12" />
           </section>
 
           <section
@@ -350,7 +350,7 @@ export default function LandingPage() {
                 </a>
               </div>
             </div>
-            <div className="border-t border-stone-200 mt-12" />
+            <div className="border-t border-stone-800 mt-12" />
           </section>
 
           <section
@@ -420,7 +420,7 @@ export default function LandingPage() {
                 </a>
               </div>
             </div>
-            <div className="border-t border-stone-200 mt-12" />
+            <div className="border-t border-stone-800 mt-12" />
           </section>
 
           <section
