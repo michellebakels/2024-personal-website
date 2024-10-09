@@ -107,7 +107,7 @@ export default function LandingPage() {
           </nav>
         </div>
       </header>
-      <section className="bg-stone-50 pt-8 md:py-12 mt-20 border-b border-stone-800">
+      <section className="bg-stone-50 py-8 md:py-12 mt-20 border-b border-stone-800">
         <div className="px-8 md:pl-0 md:ml-8 md:w-1/3">
           <p className="text-sm leading-relaxed">
             Michelle is a software developer, community builder, and conference
