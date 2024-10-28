@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect, useRef } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -216,6 +216,91 @@ export default function LandingPage() {
                     View Event
                   </button>
                 </a>
+              </div>
+            </div>
+            <div className="mt-12">
+              <button
+                onClick={() => {
+                  const moreEvents = document.getElementById("more-events")
+                  if (moreEvents) {
+                    moreEvents.classList.toggle("hidden")
+                  }
+                }}
+                className="text-sm uppercase tracking-wide pr-4 py-2 block flex items-center"
+              >
+                More Events <ChevronDown className="ml-2" size={16} />
+              </button>
+
+              <div id="more-events" className="hidden mt-12">
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div>
+                    <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
+                      Past: React Miami Sip & Ship
+                    </h3>
+                    <p className="mb-2 text-sm leading-relaxed">
+                      Celebrating the launch of React Miami 2025 with our
+                      community!
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide">
+                      Date: October 16, 2024
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                      Location: Miami, FL
+                    </p>
+                    <a href="https://lu.ma/l4i7vil7" target="_blank">
+                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                        View Invite
+                      </button>
+                    </a>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
+                      Past: Crowdfunding and Cocktails
+                    </h3>
+                    <p className="mb-2 text-sm leading-relaxed">
+                      Shark Tank meets Cocktail Party benefiting the local
+                      startup ecosystem.
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide">
+                      Date: April 12, 2023
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                      Location: West Palm Beach, Fl
+                    </p>
+                    <a
+                      href="https://www.eventbrite.com/e/crowdfunding-cocktails-tickets-588406308107"
+                      target="_blank"
+                    >
+                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                        View Promo
+                      </button>
+                    </a>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
+                      Past: Developer DAO Meetup
+                    </h3>
+                    <p className="mb-2 text-sm leading-relaxed">
+                      The first ever Developer DAO event with members and the
+                      local and community.
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide">
+                      Date: November 29, 2021
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                      Location: Miami, Fl
+                    </p>
+                    <a
+                      href="https://x.com/michellebakels/status/1465311073385566209"
+                      target="_blank"
+                    ></a>
+                    <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                      View Event
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="border-t border-stone-800 mt-12" />
