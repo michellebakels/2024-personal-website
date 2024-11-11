@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect, useRef } from "react"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
 
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,6 +12,7 @@ export default function LandingPage() {
     talks: false,
     contact: false,
   })
+  const [isMoreEventsOpen, setIsMoreEventsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -221,17 +222,22 @@ export default function LandingPage() {
             <div className="mt-12">
               <button
                 onClick={() => {
-                  const moreEvents = document.getElementById("more-events")
-                  if (moreEvents) {
-                    moreEvents.classList.toggle("hidden")
-                  }
+                  setIsMoreEventsOpen(!isMoreEventsOpen)
                 }}
                 className="text-sm uppercase tracking-wide pr-4 py-2 block flex items-center"
               >
-                More Events <ChevronDown className="ml-2" size={16} />
+                More Events{" "}
+                {!isMoreEventsOpen ? (
+                  <ChevronDown className="ml-2" size={16} />
+                ) : (
+                  <ChevronUp className="ml-2" size={16} />
+                )}
               </button>
 
-              <div id="more-events" className="hidden mt-12">
+              <div
+                id="more-events"
+                className={isMoreEventsOpen ? "" : "hidden"}
+              >
                 <div className="grid md:grid-cols-3 gap-8">
                   <div>
                     <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
