@@ -236,7 +236,7 @@ export default function LandingPage() {
 
               <div
                 id="more-events"
-                className={isMoreEventsOpen ? "" : "hidden"}
+                className={isMoreEventsOpen ? "mt-6" : "hidden"}
               >
                 <div className="grid md:grid-cols-3 gap-8">
                   <div>
