@@ -1,27 +1,28 @@
-"use client"
-import { useState, useEffect, useRef } from "react"
-import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
+"use client";
+import { useState, useEffect, useRef } from "react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 
 export default function LandingPage() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({})
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
   const [stickyTitles, setStickyTitles] = useState({
     events: true,
     community: false,
     work: false,
     talks: false,
     contact: false,
-  })
-  const [isMoreEventsOpen, setIsMoreEventsOpen] = useState(false)
+  });
+  const [isMoreEventsOpen, setIsMoreEventsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const communityTop =
-        sectionRefs.current["community"]?.getBoundingClientRect().top
-      const workTop = sectionRefs.current["work"]?.getBoundingClientRect().top
-      const talksTop = sectionRefs.current["talks"]?.getBoundingClientRect().top
+        sectionRefs.current["community"]?.getBoundingClientRect().top;
+      const workTop = sectionRefs.current["work"]?.getBoundingClientRect().top;
+      const talksTop =
+        sectionRefs.current["talks"]?.getBoundingClientRect().top;
       const contactTop =
-        sectionRefs.current["contact"]?.getBoundingClientRect().top
+        sectionRefs.current["contact"]?.getBoundingClientRect().top;
 
       setStickyTitles({
         events: (communityTop ?? 0) > 100,
@@ -29,25 +30,25 @@ export default function LandingPage() {
         work: (workTop ?? 0) <= 100 && (talksTop ?? 0) > 100,
         talks: (talksTop ?? 0) <= 100 && (contactTop ?? 0) > 300,
         contact: (contactTop ?? 0) <= 300,
-      })
-    }
+      });
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId)
+    const section = document.getElementById(sectionId);
     if (section) {
-      const yOffset = -80
+      const yOffset = -80;
       const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset
-      window.scrollTo({ top: y, behavior: "smooth" })
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   return (
     <div className="min-h-screen bg-stone-50 text-stone-800 font-sans">
@@ -164,7 +165,7 @@ export default function LandingPage() {
           <section
             id="events"
             ref={(el) => {
-              if (el) sectionRefs.current["events"] = el
+              if (el) sectionRefs.current["events"] = el;
             }}
             className="pb-12"
           >
@@ -222,7 +223,7 @@ export default function LandingPage() {
             <div className="mt-12">
               <button
                 onClick={() => {
-                  setIsMoreEventsOpen(!isMoreEventsOpen)
+                  setIsMoreEventsOpen(!isMoreEventsOpen);
                 }}
                 className="text-sm uppercase tracking-wide pr-4 py-2 block flex items-center"
               >
@@ -315,7 +316,7 @@ export default function LandingPage() {
           <section
             id="community"
             ref={(el) => {
-              if (el) sectionRefs.current["community"] = el
+              if (el) sectionRefs.current["community"] = el;
             }}
             className="pb-12"
           >
@@ -331,9 +332,6 @@ export default function LandingPage() {
                   1909 is a non-profit 501(c)3 organization dedicated to the
                   holistic growth of entrepreneurs, small business owners,
                   creative freelancers, and innovators.
-                </p>
-                <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Role: Vice Chair
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
                   Duration: 2022 - Present
@@ -353,9 +351,6 @@ export default function LandingPage() {
                   committed to nurturing our tech community and promoting STEM
                   education throughout South Florida.
                 </p>
-                <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Role: Chair
-                </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
                   Duration: 2018 - Present
                 </p>
@@ -372,7 +367,7 @@ export default function LandingPage() {
           <section
             id="work"
             ref={(el) => {
-              if (el) sectionRefs.current["work"] = el
+              if (el) sectionRefs.current["work"] = el;
             }}
             className="pb-12"
           >
@@ -447,7 +442,7 @@ export default function LandingPage() {
           <section
             id="talks"
             ref={(el) => {
-              if (el) sectionRefs.current["talks"] = el
+              if (el) sectionRefs.current["talks"] = el;
             }}
             className="pb-12"
           >
@@ -517,7 +512,7 @@ export default function LandingPage() {
           <section
             id="contact"
             ref={(el) => {
-              if (el) sectionRefs.current["contact"] = el
+              if (el) sectionRefs.current["contact"] = el;
             }}
             className="pb-12"
           >
@@ -587,5 +582,5 @@ export default function LandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
