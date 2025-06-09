@@ -175,7 +175,7 @@ export default function LandingPage() {
             <div className="space-y-12">
               <div>
                 <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  Upcoming: React Miami
+                  Upcoming: React Miami, Year 5
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
                   Learn and connect with 500 React developers from around the
@@ -185,7 +185,7 @@ export default function LandingPage() {
                   beyond.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Date: April 17-18, 2025
+                  Date: April 23-24, 2026
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
                   Location: Miami, Fl
