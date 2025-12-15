@@ -92,9 +92,7 @@ export default function LandingPage() {
       </header>
       <section className="bg-stone-50 py-8 md:py-12 mt-20 border-b border-stone-800">
         <div className="px-8 md:pl-0 md:ml-8 md:w-1/3">
-          <p className="text-sm leading-relaxed">
-            {introText}
-          </p>
+          <p className="text-sm leading-relaxed">{introText}</p>
         </div>
       </section>
       <main className="py-12 px-4 md:px-8 md:flex">
@@ -155,7 +153,7 @@ export default function LandingPage() {
                 }}
                 className="text-sm uppercase tracking-wide pr-4 py-2 block flex items-center"
               >
-                More Events{" "}
+                Past Events{" "}
                 {!isMoreEventsOpen ? (
                   <ChevronDown className="ml-2" size={16} />
                 ) : (
@@ -371,9 +369,7 @@ export default function LandingPage() {
       </main>
       <footer className="bg-stone-800 text-stone-200 py-6">
         <div className="px-4 text-center">
-          <p className="text-xs uppercase tracking-wide">
-            {footerText}
-          </p>
+          <p className="text-xs uppercase tracking-wide">{footerText}</p>
         </div>
       </footer>
     </div>
