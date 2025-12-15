@@ -36,10 +36,10 @@ export default function LandingPage() {
         sectionRefs.current["contact"]?.getBoundingClientRect().top;
 
       setStickyTitles({
-        events: (communityTop ?? 0) > 100,
-        community: (communityTop ?? 0) <= 100 && (workTop ?? 0) > 100,
-        work: (workTop ?? 0) <= 100 && (talksTop ?? 0) > 100,
-        talks: (talksTop ?? 0) <= 100 && (contactTop ?? 0) > 300,
+        events: (communityTop ?? 0) > 200,
+        community: (communityTop ?? 0) <= 200 && (workTop ?? 0) > 200,
+        work: (workTop ?? 0) <= 200 && (talksTop ?? 0) > 200,
+        talks: (talksTop ?? 0) <= 200 && (contactTop ?? 0) > 300,
         contact: (contactTop ?? 0) <= 300,
       });
     };
