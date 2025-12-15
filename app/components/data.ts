@@ -1,5 +1,5 @@
 export const introText =
-  "Michelle is a software developer, community builder, and conference organizer. She works at G2i as Program Director of Developer Health where she focuses on creating initiatives to support the mental and physical health of software developers. She is the co-organizer of React Miami, Chair of the South Florida Tech Hub Foundation, and Vice Chair of 1909.";
+  "Michelle is a software developer, community builder, and conference organizer. She is the creator and organizer of Let Me Show You Something, co-organizer of React Miami and AI Engineer: Miami, and board member for South Florida Tech Hub and 1909.";
 
 export const navItems = [
   { id: "events", label: "Events" },
