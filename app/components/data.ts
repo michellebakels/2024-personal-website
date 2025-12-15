@@ -161,4 +161,4 @@ export const contactItems = [
   },
 ];
 
-export const footerText = "© 2024 Michelle Bakels.";
+export const footerText = `©${new Date().getFullYear()} Michelle Bakels.`;
