@@ -10,7 +10,7 @@ export const navItems = [
 
 export const events = [
   {
-    title: "Upcoming: AI Engineer: Miami",
+    title: "AI Engineer: Miami",
     description: "Join the first AI Engineer Edition in Miami - a community-driven conference, inspired and supported by the team behind the AI Engineer World's Fair. This two-day event brings together AI engineers, CTOs, and VPs of AI to connect, learn, and engineer the future of AI.",
     date: "April 20-21, 2025",
     location: "Miami, Fl",
@@ -18,7 +18,7 @@ export const events = [
     buttonText: "Get Tickets",
   },
   {
-    title: "Upcoming: React Miami, Year 5",
+    title: "React Miami, Year 5",
     description: "Learn and connect with 500 React developers from around the world while soaking up the famous Miami sunshine! Discover the latest in our ecosystem and gain skills for building fully comprehensive React applications — from the frontend and beyond.",
     date: "April 23-24, 2026",
     location: "Miami, Fl",
