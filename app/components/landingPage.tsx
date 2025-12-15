@@ -215,13 +215,11 @@ export default function LandingPage() {
                   <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
                     Duration: {item.duration}
                   </p>
-                  {item.showButton && (
-                    <a href={item.link} target="_blank">
-                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                        {item.buttonText}
-                      </button>
-                    </a>
-                  )}
+                  <a href={item.link} target="_blank">
+                    <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                      {item.buttonText}
+                    </button>
+                  </a>
                 </div>
               ))}
             </div>

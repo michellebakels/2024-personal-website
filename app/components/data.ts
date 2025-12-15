@@ -77,16 +77,14 @@ export const communityItems = [
     duration: "2022 - Present",
     link: "https://www.weare1909.org/",
     buttonText: "Learn More",
-    showButton: true,
   },
   {
-    title: "Tech Hub Foundation Board of Directors",
+    title: "Tech Hub Board of Directors",
     description:
-      "The Tech Hub Foundation is a 501(c)3 charitable organization committed to nurturing our tech community and promoting STEM education throughout South Florida.",
-    duration: "2018 - Present",
-    link: "",
-    buttonText: "",
-    showButton: false,
+      "South Florida Tech Hub is a non-profit membership association dedicated to strengthening the tech landscape of South Florida and Treasure Coast.",
+    duration: "2025 - Present",
+    link: "https://techhubsouthflorida.org/",
+    buttonText: "Learn More",
   },
 ];
 
