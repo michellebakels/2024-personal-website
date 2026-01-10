@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background matching website -->
+  <rect width="1200" height="630" fill="#fafaf9"/>
+  
+  <!-- Border like website header -->
+  <rect x="0" y="80" width="1200" height="2" fill="#78716c"/>
+  
+  <!-- Name section - matching website header style -->
+  <text x="100" y="220" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="300" fill="#1c1917" letter-spacing="4">MICHELLE BAKELS</text>
+  
+  <!-- Description - matching intro text style -->
+  <text x="100" y="290" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#57534e" letter-spacing="1">
+    Software Developer
+  </text>
+  <text x="100" y="330" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#57534e" letter-spacing="1">
+    Community Builder
+  </text>
+  <text x="100" y="370" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#57534e" letter-spacing="1">
+    Conference Organizer
+  </text>
+  
+  <!-- Button style element like website -->
+  <rect x="100" y="430" width="180" height="50" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <text x="190" y="460" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1c1917" text-anchor="middle" letter-spacing="2" text-transform="uppercase" font-weight="400">LEARN MORE</text>
+  
+  <!-- Footer matching website -->
+  <rect x="0" y="570" width="1200" height="60" fill="#292524"/>
+</svg>
