@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.svg",
+        url: "https://michellebakels.com/og",
         width: 1200,
         height: 630,
         alt: "Michelle Bakels - Software Developer & Community Builder",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description:
       "Software developer, community builder, and conference organizer. Creating meaningful connections in the tech community.",
     creator: "@MichelleBakels",
-    images: ["/og-image.svg"],
+    images: ["https://michellebakels.com/og"],
   },
   robots: {
     index: true,
