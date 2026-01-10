@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/icon.svg",
+    icon: "/favicon.svg",
     shortcut: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
