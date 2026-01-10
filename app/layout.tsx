@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Michelle Bakels - Software Developer & Community Builder",
     description:
-      "Software developer, community builder, and conference organizer. Creating meaningful connections in the tech community through events like React Miami and Let Me Show You Something.",
+      "Software developer, community builder, and conference organizer. Creating meaningful connections in the dev community through events like React Miami and Let Me Show You Something.",
     url: "https://michellebakels.com",
     siteName: "Michelle Bakels",
     locale: "en_US",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Michelle Bakels - Software Developer & Community Builder",
     description:
-      "Software developer, community builder, and conference organizer. Creating meaningful connections in the tech community.",
+      "Software developer, community builder, and conference organizer. Creating meaningful connections in the dev community.",
     creator: "@MichelleBakels",
     images: ["https://michellebakels.com/og"],
   },
