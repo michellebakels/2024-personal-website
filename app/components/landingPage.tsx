@@ -112,12 +112,9 @@ export default function LandingPage() {
       <section className="bg-stone-50 py-8 md:py-12 mt-20 border-b border-stone-800">
         <div className="px-8 md:pl-0 md:ml-8 md:w-1/3">
           <p className="text-sm leading-relaxed">
-            Michelle is a software developer, community builder, and conference
-            organizer. She works at G2i as Program Director of Developer Health
-            where she focuses on creating initiatives to support the mental and
-            physical health of software developers. She is the co-organizer of
-            React Miami, Chair of the South Florida Tech Hub Foundation, and
-            Vice Chair of 1909.
+            Michelle is a software developer, community builder, and event
+            organizer. She works at OpenCode on marketing and events and is the
+            co-creator of React Miami.
           </p>
         </div>
       </section>
@@ -175,45 +172,16 @@ export default function LandingPage() {
             <div className="space-y-12">
               <div>
                 <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  Upcoming: React Miami, Year 5
+                  Let Me Show You Something dev meetup
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
-                  Learn and connect with 500 React developers from around the
-                  world while soaking up the famous Miami sunshine! Discover the
-                  latest in our ecosystem and gain skills for building fully
-                  comprehensive React applications — from the frontend and
-                  beyond.
-                </p>
-                <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Date: April 23-24, 2026
+                  A community meetup series for developers to share projects,
+                  ideas, and things they're building.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Location: Miami, Fl
+                  Location: West Palm Beach, Fl
                 </p>
-                <a href="https://www.reactmiami.com/" target="_blank">
-                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                    Get Tickets
-                  </button>
-                </a>
-              </div>
-              <div>
-                <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  Past: Dev Writers Retreat & Unconference
-                </h3>
-                <p className="mb-2 text-sm leading-relaxed">
-                  ​DEV | WRITERS | RETREAT is a first-of-its-kind experiment in
-                  pushing forward the state of coders-who-write and
-                  writers-who-code. ​Helping developers, and people in tech
-                  connect and share knowledge easily. Hassle-free blogging and
-                  community experience for the creators of tomorrow.
-                </p>
-                <p className="text-xs text-stone-600 uppercase tracking-wide">
-                  Date: November 7, 2022
-                </p>
-                <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Location: Miami, Fl
-                </p>
-                <a href="https://lu.ma/dwr" target="_blank">
+                <a href="https://luma.com/calendar/manage/cal-en3GhPVbZ2DEy6F" target="_blank">
                   <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
                     View Event
                   </button>
@@ -227,7 +195,7 @@ export default function LandingPage() {
                 }}
                 className="text-sm uppercase tracking-wide pr-4 py-2 block flex items-center"
               >
-                More Events{" "}
+                Past Events{" "}
                 {!isMoreEventsOpen ? (
                   <ChevronDown className="ml-2" size={16} />
                 ) : (
@@ -242,70 +210,65 @@ export default function LandingPage() {
                 <div className="grid md:grid-cols-3 gap-8">
                   <div>
                     <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                      Past: React Miami Sip & Ship
+                      React Miami
                     </h3>
                     <p className="mb-2 text-sm leading-relaxed">
-                      Celebrating the launch of React Miami 2025 with our
-                      community!
+                      500 React developers gather in Miami sunshine to learn,
+                      connect, and explore the ecosystem.
                     </p>
                     <p className="text-xs text-stone-600 uppercase tracking-wide">
-                      Date: October 16, 2024
-                    </p>
-                    <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                      Location: Miami, FL
-                    </p>
-                    <a href="https://lu.ma/l4i7vil7" target="_blank">
-                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                        View Invite
-                      </button>
-                    </a>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                      Past: Crowdfunding and Cocktails
-                    </h3>
-                    <p className="mb-2 text-sm leading-relaxed">
-                      Shark Tank meets Cocktail Party benefiting the local
-                      startup ecosystem.
-                    </p>
-                    <p className="text-xs text-stone-600 uppercase tracking-wide">
-                      Date: April 12, 2023
-                    </p>
-                    <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                      Location: West Palm Beach, Fl
-                    </p>
-                    <a
-                      href="https://www.eventbrite.com/e/crowdfunding-cocktails-tickets-588406308107"
-                      target="_blank"
-                    >
-                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                        View Promo
-                      </button>
-                    </a>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                      Past: Developer DAO Meetup
-                    </h3>
-                    <p className="mb-2 text-sm leading-relaxed">
-                      The first ever Developer DAO event with members and the
-                      local and community.
-                    </p>
-                    <p className="text-xs text-stone-600 uppercase tracking-wide">
-                      Date: November 29, 2021
+                      Date: April 23-24, 2026
                     </p>
                     <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
                       Location: Miami, Fl
                     </p>
-                    <a
-                      href="https://x.com/michellebakels/status/1465311073385566209"
-                      target="_blank"
-                    ></a>
-                    <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                      View Event
-                    </button>
+                    <a href="https://www.reactmiami.com/" target="_blank">
+                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                        View Event
+                      </button>
+                    </a>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
+                      AI Engineer Miami
+                    </h3>
+                    <p className="mb-2 text-sm leading-relaxed">
+                      The premier AI engineering conference bringing 500+ engineers
+                      to Miami for connection and learning.
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide">
+                      Date: April 20-21, 2026
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                      Location: Downtown Miami, FL
+                    </p>
+                    <a href="https://www.ai.engineer/miami" target="_blank">
+                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                        View Event
+                      </button>
+                    </a>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
+                      Dev Writers Retreat
+                    </h3>
+                    <p className="mb-2 text-sm leading-relaxed">
+                      A first-of-its-kind experiment pushing forward the state of
+                      coders-who-write and writers-who-code.
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide">
+                      Date: November 7, 2022
+                    </p>
+                    <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                      Location: Miami, Fl
+                    </p>
+                    <a href="https://lu.ma/dwr" target="_blank">
+                      <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                        View Event
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -326,6 +289,24 @@ export default function LandingPage() {
             <div className="space-y-12">
               <div>
                 <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
+                  Tech Hub Board of Directors
+                </h3>
+                <p className="mb-2 text-sm leading-relaxed">
+                  A dynamic non-profit membership association strengthening the
+                  tech landscape of South Florida and Treasure Coast through
+                  talent and economic growth.
+                </p>
+                <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
+                  Duration: 2018 - Present
+                </p>
+                <a href="https://techhubsouthflorida.org/" target="_blank">
+                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
+                    Learn More
+                  </button>
+                </a>
+              </div>
+              <div>
+                <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
                   1909 Board of Directors
                 </h3>
                 <p className="mb-2 text-sm leading-relaxed">
@@ -334,31 +315,13 @@ export default function LandingPage() {
                   creative freelancers, and innovators.
                 </p>
                 <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Duration: 2022 - Present
+                  Duration: 2022 - 2026
                 </p>
                 <a href="https://www.weare1909.org/" target="_blank">
                   <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
                     Learn More
                   </button>
                 </a>
-              </div>
-              <div>
-                <h3 className="text-lg font-normal uppercase tracking-wide mb-2">
-                  Tech Hub Foundation Board of Directors
-                </h3>
-                <p className="mb-2 text-sm leading-relaxed">
-                  The Tech Hub Foundation is a 501(c)3 charitable organization
-                  committed to nurturing our tech community and promoting STEM
-                  education throughout South Florida.
-                </p>
-                <p className="text-xs text-stone-600 uppercase tracking-wide mb-4">
-                  Duration: 2018 - Present
-                </p>
-                {/* <a href="https://techhubsouthflorida.org/" target="_blank">
-                  <button className="text-sm uppercase tracking-wide border border-stone-800 px-4 py-2 hover:bg-stone-800 hover:text-white transition-colors">
-                    Learn More
-                  </button>
-                </a> */}
               </div>
             </div>
             <div className="border-t border-stone-800 mt-12" />
