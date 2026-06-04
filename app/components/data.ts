@@ -1,5 +1,5 @@
 export const introText =
-  "Michelle is a software developer, community builder, and event organizer. She works at OpenCode on marketing and events and is the co-creator of React Miami.";
+  "Michelle is a software developer, community builder, and event organizer. She works on fun and interesting projects at OpenCode and is the co-creator of React Miami."
 
 export const navItems = [
   { id: "events", label: "Events" },
@@ -7,7 +7,7 @@ export const navItems = [
   { id: "work", label: "Work" },
   { id: "talks", label: "Talks" },
   { id: "contact", label: "Contact" },
-];
+]
 
 export const events = [
   {
@@ -19,7 +19,7 @@ export const events = [
     link: "https://luma.com/calendar/manage/cal-en3GhPVbZ2DEy6F",
     buttonText: "View Event",
   },
-];
+]
 
 export const moreEvents = [
   {
@@ -49,7 +49,7 @@ export const moreEvents = [
     link: "https://lu.ma/dwr",
     buttonText: "View Event",
   },
-];
+]
 
 export const communityItems = [
   {
@@ -68,7 +68,7 @@ export const communityItems = [
     link: "https://www.weare1909.org/",
     buttonText: "Learn More",
   },
-];
+]
 
 export const workItems = [
   {
@@ -95,7 +95,7 @@ export const workItems = [
     link: "https://github.com/michellebakels",
     buttonText: "View on GitHub",
   },
-];
+]
 
 export const talks = [
   {
@@ -116,7 +116,7 @@ export const talks = [
     link: "https://www.youtube.com/watch?v=ADxSUtFVr64",
     buttonText: "Watch Recording",
   },
-];
+]
 
 export const contactItems = [
   {
@@ -141,6 +141,6 @@ export const contactItems = [
     buttonText: "Follow on Twitter",
     buttonLink: "https://x.com/MichelleBakels",
   },
-];
+]
 
-export const footerText = `©${new Date().getFullYear()} Michelle Bakels.`;
+export const footerText = `©${new Date().getFullYear()} Michelle Bakels.`
